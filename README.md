@@ -68,4 +68,4 @@ python test.py with 'device="cpu"'
 ## Model Accuracy
 The model is evaluated against a **strict equality** between the predicted target sequence and the groud truth target sequence of the test dataset. The model achieved an accuracy of `98.63%` (trained for 20 epochs for 45 minutes on a single GPU).
 
-For a more comprehensive description of the solution, parameter choices and loss plots, please refer to the file `Solution-Report.docx`
+For a more comprehensive description of the solution, parameter choices and loss plots, please refer to the file `Solution-Report.pdf`
