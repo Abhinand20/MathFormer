@@ -1,0 +1,146 @@
+Total number of trainable parameters = 4,031,779
+
+Seq2Seq(
+  (encoder): Encoder(
+    (tok_embedding): Embedding(35, 256)
+    (pos_embedding): Embedding(100, 256)
+    (layers): ModuleList(
+      (0): EncoderLayer(
+        (self_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=256, out_features=256, bias=True)
+          (fc_k): Linear(in_features=256, out_features=256, bias=True)
+          (fc_v): Linear(in_features=256, out_features=256, bias=True)
+          (fc_o): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=256, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (1): EncoderLayer(
+        (self_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=256, out_features=256, bias=True)
+          (fc_k): Linear(in_features=256, out_features=256, bias=True)
+          (fc_v): Linear(in_features=256, out_features=256, bias=True)
+          (fc_o): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=256, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (2): EncoderLayer(
+        (self_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=256, out_features=256, bias=True)
+          (fc_k): Linear(in_features=256, out_features=256, bias=True)
+          (fc_v): Linear(in_features=256, out_features=256, bias=True)
+          (fc_o): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=256, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (decoder): Decoder(
+    (tok_embedding): Embedding(35, 256)
+    (pos_embedding): Embedding(100, 256)
+    (layers): ModuleList(
+      (0): DecoderLayer(
+        (self_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (enc_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=256, out_features=256, bias=True)
+          (fc_k): Linear(in_features=256, out_features=256, bias=True)
+          (fc_v): Linear(in_features=256, out_features=256, bias=True)
+          (fc_o): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (encoder_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=256, out_features=256, bias=True)
+          (fc_k): Linear(in_features=256, out_features=256, bias=True)
+          (fc_v): Linear(in_features=256, out_features=256, bias=True)
+          (fc_o): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=256, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (1): DecoderLayer(
+        (self_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (enc_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=256, out_features=256, bias=True)
+          (fc_k): Linear(in_features=256, out_features=256, bias=True)
+          (fc_v): Linear(in_features=256, out_features=256, bias=True)
+          (fc_o): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (encoder_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=256, out_features=256, bias=True)
+          (fc_k): Linear(in_features=256, out_features=256, bias=True)
+          (fc_v): Linear(in_features=256, out_features=256, bias=True)
+          (fc_o): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=256, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (2): DecoderLayer(
+        (self_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (enc_attn_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (ff_layer_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (self_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=256, out_features=256, bias=True)
+          (fc_k): Linear(in_features=256, out_features=256, bias=True)
+          (fc_v): Linear(in_features=256, out_features=256, bias=True)
+          (fc_o): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (encoder_attention): MultiHeadAttentionLayer(
+          (fc_q): Linear(in_features=256, out_features=256, bias=True)
+          (fc_k): Linear(in_features=256, out_features=256, bias=True)
+          (fc_v): Linear(in_features=256, out_features=256, bias=True)
+          (fc_o): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (positionwise_feedforward): PositionwiseFeedforwardLayer(
+          (fc_1): Linear(in_features=256, out_features=512, bias=True)
+          (fc_2): Linear(in_features=512, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (fc_out): Linear(in_features=256, out_features=35, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (criterion): CrossEntropyLoss()
+)
