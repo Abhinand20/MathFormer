@@ -1,5 +1,3 @@
-# MathFormer - Solve math equations using NLP and transformers!
-
 ## Challenge
 Implement a deep neural network model that learns to expand single variable polynomials. Model input is factorized sequence and output is predicted expanded sequence. 
 
